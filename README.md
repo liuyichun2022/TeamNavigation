@@ -13,13 +13,13 @@
 
 ## 技术栈
 
-| 技术栈     | 框架说明                      |
-|---------|---------------------------|
-| 前端      | Vue3 + TS + ElementPlus   |
-| 后端的技术栈  | SpringBoot + SpringDataJp |
-| 数据库     | H2                        |
-| Docker  | docker 部署                 |
-| SaToken | 鉴权校验                      |
+| 技术栈     | 框架说明                       |
+|---------|----------------------------|
+| 前端      | Vue3 + TS + ElementPlus    |
+| 后端的技术栈  | SpringBoot + SpringDataJpa |
+| 数据库     | H2                         |
+| Docker  | docker 部署                  |
+| SaToken | 鉴权校验                       |
 
 
 ## 主要功能
