@@ -6,7 +6,7 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1-blue.svg)]()
 [![JDK-17](https://img.shields.io/badge/JDK-17-green.svg)]()
 
->  为什么要做这个项目， 现在不管那个公司或者团队，各种网站网址，表格，原型，也找过一些开源的导航搭建了，或多或少都有一些问题，索性自己从头搭建一个。
+>  企业内部网址导航，提高工作效率。
 
 >  参考导航 [team-nav](https://github.com/tuituidan/team-nav)、[菜鸟教程](https://www.runoob.com/)
 
