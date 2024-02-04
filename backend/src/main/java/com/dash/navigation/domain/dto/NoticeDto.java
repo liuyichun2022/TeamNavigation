@@ -1,0 +1,27 @@
+package com.dash.navigation.domain.dto;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+/**
+ * NoticeDto.
+ *
+ * @author Jason.liu
+ * @date 2024-02-04
+ */
+@Getter
+@Setter
+@Accessors(chain = true)
+public class NoticeDto {
+
+    private String content;
+
+    @JsonFormat(shape = Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private LocalDateTime endTime;
+
+    private Integer sort;
+}
