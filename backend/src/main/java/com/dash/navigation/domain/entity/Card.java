@@ -13,6 +13,8 @@ import lombok.experimental.Accessors;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
+import java.io.Serial;
+
 /**
  * Card.
  *
@@ -28,7 +30,8 @@ import org.hibernate.annotations.DynamicUpdate;
 @DynamicUpdate
 public class Card implements ISortEntity<Card> {
 
-    private static final long serialVersionUID = -4281175586987550016L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "C_ID", length = 32)

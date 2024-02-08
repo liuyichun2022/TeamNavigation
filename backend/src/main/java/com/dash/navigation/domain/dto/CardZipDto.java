@@ -1,5 +1,6 @@
 package com.dash.navigation.domain.dto;
 
+import java.io.Serial;
 import java.io.Serializable;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +17,8 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class CardZipDto implements Serializable {
 
-    private static final long serialVersionUID = 2042720476082054433L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String name;
 

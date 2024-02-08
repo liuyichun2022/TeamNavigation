@@ -1,5 +1,6 @@
 package com.dash.navigation.domain.entity;
 
+import java.io.Serial;
 import java.time.LocalDateTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +27,8 @@ import org.hibernate.annotations.DynamicUpdate;
 @DynamicInsert
 public class Notice implements ISortEntity<Notice> {
 
-    private static final long serialVersionUID = 5686996589966592484L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "C_ID", length = 32)

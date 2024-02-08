@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * Card.
  *
@@ -15,7 +18,9 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class CardVo {
+public class CardVo implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String id;
 

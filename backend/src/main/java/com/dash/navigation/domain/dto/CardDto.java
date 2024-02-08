@@ -3,6 +3,9 @@ package com.dash.navigation.domain.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * CardDto.
  *
@@ -11,7 +14,9 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class CardDto {
+public class CardDto implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     /**
      * 判断是原型还是普通

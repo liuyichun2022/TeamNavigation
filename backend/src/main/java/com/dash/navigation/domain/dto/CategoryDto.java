@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * Category.
  *
@@ -13,7 +16,9 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class CategoryDto  {
+public class CategoryDto  implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String icon;
 

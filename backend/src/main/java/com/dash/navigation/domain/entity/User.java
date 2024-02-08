@@ -1,5 +1,6 @@
 package com.dash.navigation.domain.entity;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Collections;
@@ -30,7 +31,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 @DynamicUpdate
 public class User implements UserDetails, Serializable {
 
-    private static final long serialVersionUID = -4826666254891063669L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "C_ID", length = 32)
