@@ -1,5 +1,6 @@
 package com.dash.navigation.domain.entity;
 
+import java.io.Serial;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +27,8 @@ import org.hibernate.annotations.DynamicUpdate;
 @DynamicUpdate
 public class Setting implements Serializable {
 
-    private static final long serialVersionUID = -6313930717204077701L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "C_ID", length = 32)

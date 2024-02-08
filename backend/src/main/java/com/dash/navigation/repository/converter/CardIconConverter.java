@@ -2,6 +2,8 @@ package com.dash.navigation.repository.converter;
 
 import com.alibaba.fastjson.JSON;
 import com.dash.navigation.domain.dto.CardIconDto;
+
+import java.io.Serial;
 import java.io.Serializable;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
@@ -15,7 +17,8 @@ import javax.persistence.Converter;
 @Converter(autoApply = true)
 public class CardIconConverter implements AttributeConverter<CardIconDto, String>, Serializable {
 
-    private static final long serialVersionUID = -6269468044853884404L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Override
     public String convertToDatabaseColumn(CardIconDto attribute) {

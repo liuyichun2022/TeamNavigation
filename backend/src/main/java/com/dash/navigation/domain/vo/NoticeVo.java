@@ -1,6 +1,9 @@
 package com.dash.navigation.domain.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import lombok.Getter;
@@ -16,7 +19,9 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class NoticeVo {
+public class NoticeVo implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String id;
 

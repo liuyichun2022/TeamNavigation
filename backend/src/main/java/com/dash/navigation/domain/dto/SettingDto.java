@@ -3,6 +3,9 @@ package com.dash.navigation.domain.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * NginxDTO.
  *
@@ -11,7 +14,9 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class SettingDto {
+public class SettingDto implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private Boolean nginxOpen;
 

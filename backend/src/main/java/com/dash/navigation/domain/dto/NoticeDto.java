@@ -2,6 +2,9 @@ package com.dash.navigation.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +19,9 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class NoticeDto {
+public class NoticeDto implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private String content;
 
